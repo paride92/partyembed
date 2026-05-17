@@ -11,7 +11,7 @@ The original [partyembed](https://github.com/lrheault/partyembed) was designed f
 ## Installation
 
 ```bash
-pip install -e /path/to/partyembed_package
+pip install git+https://github.com/paride92/partyembed.git
 ```
 
 ### Requirements

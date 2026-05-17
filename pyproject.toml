@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "partyembed"
+version = "0.2.0"
+description = "Flexible political text embedding analysis using Doc2Vec — repackaging of lrheault/partyembed"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["political science", "text analysis", "word embeddings", "doc2vec", "ideology"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "gensim>=4.0",
+    "numpy>=1.20",
+    "pandas>=1.3",
+    "scikit-learn>=1.0",
+    "scipy>=1.7",
+    "matplotlib>=3.4",
+    "nltk>=3.6",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/paride92/partyembed"
+"Original repository" = "https://github.com/lrheault/partyembed"
+"Original paper" = "https://doi.org/10.1017/pan.2019.26"
+"Bug Tracker" = "https://github.com/paride92/partyembed/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "black", "ruff", "build", "twine"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

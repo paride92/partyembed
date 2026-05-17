@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//tmp/partyembed/partyembed/**)",
+      "Read(//c/tmp/partyembed/partyembed/**)",
+      "Read(//tmp/partyembed/partyembed/utils/**)",
+      "Read(//c/tmp/partyembed/partyembed/utils/**)"
+    ]
+  }
+}
